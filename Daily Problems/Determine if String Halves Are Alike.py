@@ -1,4 +1,4 @@
-# 1704. Determine if String Halves Are Alike
+# 1704. Determine if String Halves Are Alike (Easy)
 # https://leetcode.com/problems/determine-if-string-halves-are-alike
 
 class Solution:
