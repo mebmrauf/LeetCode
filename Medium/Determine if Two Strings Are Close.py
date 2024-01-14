@@ -12,5 +12,5 @@ class Solution:
                 return True
         return False
     
-# If you want, you can skip line 6 - 8.
-# Line 9 - 11 are sufficient to solve this problem.
+# If you want, you can skip line 8 - 10.
+# Line 11 - 13 are sufficient to solve this problem.
