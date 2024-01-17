@@ -1,7 +1,7 @@
 # 380. Insert Delete GetRandom O(1)
 # https://leetcode.com/problems/insert-delete-getrandom-o1
 
-import random
+import random # No need to import in LeetCode
 
 class RandomizedSet:
 
