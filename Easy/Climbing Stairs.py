@@ -19,7 +19,7 @@ class Solution:
 
 class Solution:
     def climbStairs(self, n: int) -> int:
-        if n <= 2:
+        if 0 < n <= 2:
             return n
         totalWays = [0] * (n + 1)
         totalWays[1], totalWays[2] = 1, 2
