@@ -6,7 +6,7 @@ class Solution:
         stack = []
 
         for token in tokens:
-            if len(token) > 1 or token.isdigit():
+            if len(token) > 1 or (token.isdigit() or (token[0] == '-' and token[1:].isdigit())):
                 stack.append(int(token))
             else:
                 if token == '+':
