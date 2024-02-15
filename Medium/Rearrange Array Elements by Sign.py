@@ -1,6 +1,8 @@
 # 2149. Rearrange Array Elements by Sign
 # https://leetcode.com/problems/rearrange-array-elements-by-sign/description/
 
+from typing import List
+
 class Solution:
     def rearrangeArray(self, nums: List[int]) -> List[int]:
         l = len(nums)
