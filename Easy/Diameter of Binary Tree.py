@@ -11,14 +11,17 @@ class TreeNode:
 from typing import Optional
 class Solution:
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
-        def depth(node):
-            if not node:
-                return 0
-            left_depth = depth(node.left)
-            right_depth = depth(node.right)
-            self.diameter = max(self.diameter, left_depth + right_depth)
-            return 1 + max(left_depth, right_depth)
-
         self.diameter = 0
-        depth(root)
+        self.depthFirstSearch(root)
         return self.diameter
+
+    def depthFirstSearch(self, root):
+        if not root:
+            return 0
+
+        leftDepth = self.depthFirstSearch(root.left)
+        rightDepth = self.depthFirstSearch(root.right)
+
+        self.diameter = max(self.diameter, leftDepth + rightDepth)
+
+        return 1 + max(leftDepth, rightDepth)
