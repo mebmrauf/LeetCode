@@ -1,6 +1,6 @@
 # 1463. Cherry Pickup II
 # https://leetcode.com/problems/cherry-pickup-ii/description/
-# https://leetcode.com/problems/cherry-pickup-ii/solutions/4712104/dp-solution-cherry-collection-by-two-robots-in-a-grid/
+
 
 class Solution:
     def cherryPickup(self, grid: List[List[int]]) -> int:
