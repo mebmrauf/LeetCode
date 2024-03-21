@@ -7,6 +7,8 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
+# Iterative Solution
 # In-place
 class Solution:
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
@@ -35,3 +37,17 @@ class Solution:
                     newTemp = newTemp.next
             temp = temp.next
         return newHead
+    
+# Recursive Solution
+class Solution:
+    def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
+        # Base case: if head is None, return None
+        if not head:
+            return None
+        
+        # Recursively remove elements from the rest of the list
+        head.next = self.removeElements(head.next, val)
+        
+        # Check if the current node's value is equal to val
+        # If yes, return the next node, effectively removing the current node
+        return head.next if head.val == val else head
