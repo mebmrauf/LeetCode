@@ -9,6 +9,6 @@ class Solution:
         if leng == 1:
             return True
         for i in range(1, leng):
-            if (nums[i-1]%2 == 0 and nums[i]%2 == 0) or (nums[i-1]%2 != 0 and nums[i]%2 != 0):
+            if nums[i-1]%2 == nums[i]%2:
                 return False
         return True
